@@ -1,5 +1,5 @@
 import qrcode
-data = "some data"
+data = "00003"
 
 qr = qrcode.QRCode(
     version=3,
@@ -11,4 +11,4 @@ qr.add_data(data)
 qr.make(fit=True)
 
 img = qr.make_image(fill_color="black", back_color="white")
-img.save('qy_.bmp')
+img.save('qy_pittruck.bmp')
